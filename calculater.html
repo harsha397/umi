@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>calculater</title>
+        <script>
+            function add(){
+                var a=document.getElementById ("t1").value;
+                var b=document.getElementById ("t2").value;
+                var c=parseInt(a)+parseInt(b);
+                document.getElementById ("t3").value=c;
+            }
+                function sub(){
+                    var a=document.getElementById ("t1").value;
+                    var b=document.getElementById ("t2").value;
+                    var c=a-b;
+                    document.getElementById ("t3").value=c;
+                }
+                function mul(){
+                    var a=document.getElementById ("t1").value;
+                    var b=document.getElementById ("t2").value;
+                    var c=a*b;
+                    document.getElementById ("t3").value=c;
+                }
+                function div(){
+                    var a=document.getElementById ("t1").value;
+                    var b=document.getElementById ("t2").value;
+                    var c=a/b;
+                    document.getElementById ("t3").value=c;
+                }
+        </script>
+    </head>
+    <body>
+        enter number <input type="text" id="t1"/><br/>
+        <br/>
+        enter number <input type="text" id="t2"/><br/>
+        <br/>
+        <input type="button" value="add" onclick="add();"/>
+        <input type="button" value="sub" onclick="sub();"/>
+        <input type="button" value="mul" onclick="mul();"/>
+        <input type="button" value="div" onclick="div();"/><br/>
+        result <input type="text" id="t3"/><br/>
+    </body>
+</html>
